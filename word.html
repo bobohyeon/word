@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word</title>
+    <script defer src="./word.js"></script>
+    <link rel="stylesheet" href="./word.css">
+</head>
+<body>
+<hr>
+<div id="head"> 
+    <h1> 단어 외우기 </h1> 
+</div>
+<hr>
+<div id="navi">
+     <input type="button" value="시작" onclick="hidewords();">
+</div>
+<hr>
+<div id="main">
+    <div class="ko">
+        <div>사과</div>
+        <div>바나나</div>
+        <div>포도</div>
+        <div>메론</div>
+        <div>체리</div>
+    </div>
+    <div class="en" id="idEn">
+        <div>apple</div>
+        <div>banana</div>
+        <div>grape</div>
+        <div>melon</div>
+        <div>cherry</div>
+    </div>
+    <div class="answer">
+        <div><input type="text" placeholder="   정답 입력"></div>
+        <div><input type="text"></div>
+        <div><input type="text"></div>
+        <div><input type="text"></div>
+        <div><input type="text"></div>
+    </div>
+    <div class="enter">
+        <div><input type="button" value="정답" onclick="correctWord()"></div>
+        <div><input type="button" value="정답" onclick="correctWord()"></div>
+        <div><input type="button" value="정답" onclick="correctWord()"></div>
+        <div><input type="button" value="정답" onclick="correctWord()"></div>
+        <div><input type="button" value="정답" onclick="correctWord()"></div>
+    </div>
+    
+</div>
+
+</body>
+</html>

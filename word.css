@@ -1,0 +1,152 @@
+body{
+    background-color: rgb(248, 246, 230);
+}
+
+
+#main{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+
+    width: 100vw;
+    height: 400px;
+
+}
+
+.ko{
+    display: flex;
+    justify-content: center;
+}
+
+.ko > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(120, 198, 201);
+    background-color: rgb(120, 198, 201);
+    width: 150px;
+    height: 60px;
+
+    border-radius: 10px;
+
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+
+    margin: 30px;
+}
+
+.en{
+    display: flex;
+    justify-content: center;
+}
+
+.en > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(120, 198, 201);
+    background-color: rgb(120, 198, 201);
+    width: 150px;
+    height: 60px;
+
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+
+    border-radius: 10px;
+
+    margin: 30px;
+
+    backface-visibility: hidden;
+    transition: .7s;
+}
+
+.answer{
+    display: flex;
+    justify-content: center;
+}
+
+.enter > div > input{
+    border: 3px solid rgb(80, 143, 145);
+    background-color: white;
+    color: rgb(80, 143, 145);
+
+    &:hover{
+
+   border: 3px solid;
+    box-shadow: inset 0 0 20px rgba(117, 210, 226, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
+    outline-color: rgb(120, 198, 201);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px rgba(117, 210, 226, 0.5);
+    cursor: pointer; 
+}
+}
+  
+
+.enter{
+    display: flex;
+    justify-content: center;
+}
+
+
+input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+
+    border-radius: 10px;
+    border: 3px solid rgb(120, 198, 201);
+
+    font-size: 25px;
+    font-weight: 500;
+
+    margin: 30px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+#navi{
+    display: flex;
+    justify-content: center;
+}
+
+#navi > input{
+    border: 3px solid rgb(80, 143, 145);
+    background-color: rgb(80, 143, 145);
+    color: white;
+
+    &:hover{
+
+   border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
+    outline-color: rgb(120, 198, 201);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer; 
+}
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+.answer input {
+    display: inline-block;
+}
+
+@keyframes shake {
+    0%   { transform: translateX(0); }
+    25%  { transform: translateX(-5px); }
+    50%  { transform: translateX(5px); }
+    75%  { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.wrong {
+    animation: shake 0.3s;
+}
